@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screen.khoa.fragment.GioiThieuKhoaFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logoKhoaImageView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_slider_mainActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp">
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorEnabled="true"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="2dp"
+                    app:sliderIndicatorSelectedColor="#5A5A5A"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1" />
+            </androidx.cardview.widget.CardView>
+
+            <com.hanks.htextview.rainbow.RainbowTextView
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Giới thiệu"
+                android:textSize="25sp"
+                app:colorSpace="150dp"
+                app:colorSpeed="4dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:padding="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp">
+
+                <TextView
+                    android:id="@+id/gioithieukhoaTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.hanks.htextview.rainbow.RainbowTextView
+                android:layout_marginLeft="@dimen/dp_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Đơn vị hợp tác"
+                android:textSize="25sp"
+                app:colorSpace="150dp"
+                app:colorSpeed="4dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_margin="8dp"
+                android:id="@+id/hoptacRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
