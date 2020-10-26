@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/teal_200"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/rectangle"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+            <TextView
+                android:background="@color/teal_200"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:id="@+id/sttTextView"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="@dimen/sp_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <TextView
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@color/teal_200"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:gravity="left|center_vertical"
+            android:text="Khoa công nghệ thông tin"
+            android:id="@+id/tenkhoaTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

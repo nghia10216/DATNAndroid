@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Trang chủ" />
+    <item
+        android:id="@+id/nav_khoa"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_domain_24"
+        android:title="Khoa" />
+    <item
+        android:id="@+id/nav_contact"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_question_answer_24"
+        android:title="Hỏi đáp" />
+
+    <item
+        android:enabled="true"
+        android:id="@+id/nav_diemchuan"
+        android:icon="@drawable/ic_baseline_stacked_line_chart_24"
+        android:title="Điểm chuẩn" />
+
+</menu>
